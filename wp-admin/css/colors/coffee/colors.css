@@ -2,340 +2,536 @@
  * Button mixin- creates 3d-ish button effect with correct
  * highlights/shadows, based on a base color.
  */
+/* line 6, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 html {
   background: #f1f1f1; }
 
 /* Links */
+/* line 13, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 a {
   color: #0074a2; }
-  a:hover, a:active, a:focus {
+  /* line 18, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+  a:hover,
+  a:active,
+  a:focus {
     color: #0099d5; }
 
-#media-upload a.del-link:hover, div.dashboard-widget-submit input:hover, .subsubsub a:hover, .subsubsub a.current:hover {
+/* line 26, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#media-upload a.del-link:hover,
+div.dashboard-widget-submit input:hover,
+.subsubsub a:hover,
+.subsubsub a.current:hover {
   color: #0099d5; }
 
 /* Forms */
+/* line 33, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 input[type=checkbox]:checked:before {
   color: #59524c; }
 
+/* line 37, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 input[type=radio]:checked:before {
   background: #59524c; }
 
-.wp-core-ui input[type="reset"]:hover, .wp-core-ui input[type="reset"]:active {
+/* line 42, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.wp-core-ui input[type="reset"]:hover,
+.wp-core-ui input[type="reset"]:active {
   color: #0099d5; }
 
 /* Core UI */
+/* line 50, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .button-primary {
   background: #c7a589;
   border-color: #b78b66;
   color: white;
-  -webkit-box-shadow: inset 0 1px 0 #e0cdbd, 0 1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 1px 0 #e0cdbd, 0 1px 0 rgba(0, 0, 0, 0.15); }
-  .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
+  /* line 12, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_mixins.scss */
+  .wp-core-ui .button-primary:hover,
+  .wp-core-ui .button-primary:focus {
     background: #bf9878;
     border-color: #ae7d55;
     color: white;
-    -webkit-box-shadow: inset 0 1px 0 #d7bfac;
     box-shadow: inset 0 1px 0 #d7bfac; }
+  /* line 19, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_mixins.scss */
   .wp-core-ui .button-primary:focus {
-    -webkit-box-shadow: inset 0 1px 0 #d7bfac, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
     box-shadow: inset 0 1px 0 #d7bfac, 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8); }
+  /* line 25, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_mixins.scss */
   .wp-core-ui .button-primary:active {
     background: #b78b66;
     border-color: #ae7d55;
     color: white;
-    -webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
     box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8); }
-  .wp-core-ui .button-primary[disabled], .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary.button-primary-disabled, .wp-core-ui .button-primary.disabled {
+  /* line 37, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_mixins.scss */
+  .wp-core-ui .button-primary[disabled],
+  .wp-core-ui .button-primary:disabled,
+  .wp-core-ui .button-primary.button-primary-disabled,
+  .wp-core-ui .button-primary.disabled {
     color: #d1ccc7 !important;
     background: #ba906d !important;
     border-color: #ae7d55 !important;
     text-shadow: none !important; }
+
+/* line 54, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-primary {
   color: #fff;
   background-color: #59524c; }
+
+/* line 58, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-text-primary {
   color: #59524c; }
+
+/* line 62, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-highlight {
   color: #fff;
   background-color: #c7a589; }
+
+/* line 66, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-text-highlight {
   color: #c7a589; }
+
+/* line 70, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-notification {
   color: #fff;
   background-color: #9ea476; }
+
+/* line 74, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-text-notification {
   color: #9ea476; }
+
+/* line 78, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-core-ui .wp-ui-text-icon {
   color: #f3f2f1; }
 
 /* List tables */
-.wrap .add-new-h2:hover, #add-new-comment a:hover, .tablenav .tablenav-pages a:hover, .tablenav .tablenav-pages a:focus {
+/* line 89, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.wrap .add-new-h2:hover,
+#add-new-comment a:hover,
+.tablenav .tablenav-pages a:hover,
+.tablenav .tablenav-pages a:focus {
   color: #fff;
   background-color: #59524c; }
 
+/* line 94, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .view-switch a.current:before {
   color: #59524c; }
 
+/* line 98, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .view-switch a:hover:before {
   color: #9ea476; }
 
+/* line 102, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .post-com-count:hover:after {
   border-top-color: #59524c; }
 
+/* line 105, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .post-com-count:hover span {
   color: #fff;
   background-color: #59524c; }
 
+/* line 110, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 strong .post-com-count:after {
   border-top-color: #9ea476; }
 
+/* line 113, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 strong .post-com-count span {
   background-color: #9ea476; }
 
 /* Admin Menu */
-#adminmenuback, #adminmenuwrap, #adminmenu {
+/* line 122, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu {
   background: #59524c; }
 
+/* line 126, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #adminmenu a {
   color: #fff; }
 
+/* line 130, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #adminmenu div.wp-menu-image:before {
   color: #f3f2f1; }
 
-#adminmenu a:hover, #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+/* line 137, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu a:hover,
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
   color: #fff;
   background-color: #c7a589; }
 
-#adminmenu li.menu-top:hover div.wp-menu-image:before, #adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
+/* line 143, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu li.menu-top:hover div.wp-menu-image:before,
+#adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
   color: #fff; }
 
 /* Active tabs use a bottom border color that matches the page background color. */
-.about-wrap h2 .nav-tab-active, .nav-tab-active, .nav-tab-active:hover {
+/* line 152, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.about-wrap h2 .nav-tab-active,
+.nav-tab-active,
+.nav-tab-active:hover {
   background-color: #f1f1f1;
   border-bottom-color: #f1f1f1; }
 
 /* Admin Menu: submenu */
-#adminmenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
+/* line 164, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
   background: #46403c; }
 
+/* line 168, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
   border-right-color: #46403c; }
 
+/* line 172, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #adminmenu .wp-submenu .wp-submenu-head {
   color: #cdcbc9; }
 
-#adminmenu .wp-submenu a, #adminmenu .wp-has-current-submenu .wp-submenu a, .folded #adminmenu .wp-has-current-submenu .wp-submenu a, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+/* line 180, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu .wp-submenu a,
+#adminmenu .wp-has-current-submenu .wp-submenu a,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
   color: #cdcbc9; }
-  #adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu a:focus, #adminmenu .wp-has-current-submenu .wp-submenu a:hover, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:focus, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:hover, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:focus, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:focus, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
+  /* line 183, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+  #adminmenu .wp-submenu a:focus,
+  #adminmenu .wp-submenu a:hover,
+  #adminmenu .wp-has-current-submenu .wp-submenu a:focus,
+  #adminmenu .wp-has-current-submenu .wp-submenu a:hover,
+  .folded #adminmenu .wp-has-current-submenu .wp-submenu a:focus,
+  .folded #adminmenu .wp-has-current-submenu .wp-submenu a:hover,
+  #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:focus,
+  #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover,
+  #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:focus, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
     color: #c7a589; }
 
 /* Admin Menu: current */
-#adminmenu .wp-submenu li.current a, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a, #adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a {
+/* line 193, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu .wp-submenu li.current a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a {
   color: #fff; }
-  #adminmenu .wp-submenu li.current a:hover, #adminmenu .wp-submenu li.current a:focus, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a:hover, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a:focus, #adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a:hover, #adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a:focus {
+  /* line 196, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+  #adminmenu .wp-submenu li.current a:hover,
+  #adminmenu .wp-submenu li.current a:focus,
+  #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a:hover,
+  #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a:focus,
+  #adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a:hover, #adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a:focus {
     color: #c7a589; }
 
-ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
+/* line 202, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu > li.current > a.current:after {
   border-right-color: #f1f1f1; }
 
-#adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head, .folded #adminmenu li.current.menu-top {
+/* line 209, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head,
+.folded #adminmenu li.current.menu-top {
   color: #fff;
   background: #c7a589; }
 
+/* line 214, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #adminmenu li.wp-has-current-submenu div.wp-menu-image:before {
   color: #fff; }
 
 /* Admin Menu: bubble */
-#adminmenu .awaiting-mod, #adminmenu .update-plugins {
+/* line 222, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins {
   color: #fff;
   background: #9ea476; }
 
-#adminmenu li.current a .awaiting-mod, #adminmenu li a.wp-has-current-submenu .update-plugins, #adminmenu li:hover a .awaiting-mod, #adminmenu li.menu-top:hover > a .update-plugins {
+/* line 230, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#adminmenu li.current a .awaiting-mod,
+#adminmenu li a.wp-has-current-submenu .update-plugins,
+#adminmenu li:hover a .awaiting-mod,
+#adminmenu li.menu-top:hover > a .update-plugins {
   color: #fff;
   background: #46403c; }
 
 /* Admin Menu: collapse button */
+/* line 238, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #collapse-menu {
   color: #f3f2f1; }
 
+/* line 242, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #collapse-menu:hover {
   color: #fff; }
 
+/* line 246, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #collapse-button div:after {
   color: #f3f2f1; }
 
+/* line 250, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #collapse-menu:hover #collapse-button div:after {
   color: #fff; }
 
 /* Admin Bar */
+/* line 257, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar {
   color: #fff;
   background: #59524c; }
 
-#wpadminbar .ab-item, #wpadminbar a.ab-item, #wpadminbar > #wp-toolbar span.ab-label, #wpadminbar > #wp-toolbar span.noticon {
+/* line 265, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .ab-item,
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar > #wp-toolbar span.noticon {
   color: #fff; }
 
-#wpadminbar .ab-icon, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before, #wpadminbar .ab-item:after {
+/* line 272, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .ab-icon,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before,
+#wpadminbar .ab-item:after {
   color: #f3f2f1; }
 
-#wpadminbar .ab-top-menu > li:hover > .ab-item, #wpadminbar .ab-top-menu > li.hover > .ab-item, #wpadminbar .ab-top-menu > li > .ab-item:focus, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus, #wpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item, #wpadminbar .ab-top-menu > li.menupop.hover > .ab-item {
+/* line 281, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .ab-top-menu > li:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item {
   color: #c7a589;
   background: #46403c; }
 
-#wpadminbar > #wp-toolbar li:hover span.ab-label, #wpadminbar > #wp-toolbar li.hover span.ab-label, #wpadminbar > #wp-toolbar a:focus span.ab-label {
+/* line 288, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar > #wp-toolbar li:hover span.ab-label,
+#wpadminbar > #wp-toolbar li.hover span.ab-label,
+#wpadminbar > #wp-toolbar a:focus span.ab-label {
   color: #c7a589; }
 
-#wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar li:hover .ab-item:after, #wpadminbar li:hover #adminbarsearch:before {
+/* line 295, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar li:hover .ab-item:after,
+#wpadminbar li:hover #adminbarsearch:before {
   color: #fff; }
 
 /* Admin Bar: submenu */
+/* line 302, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar .menupop .ab-sub-wrapper {
   background: #46403c; }
 
-#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+/* line 307, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
   background: #656463; }
 
-#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar-nojs .quicklinks .menupop:hover ul li a {
+/* line 314, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .ab-submenu .ab-item,
+#wpadminbar .quicklinks .menupop ul li a,
+#wpadminbar .quicklinks .menupop.hover ul li a,
+#wpadminbar-nojs .quicklinks .menupop:hover ul li a {
   color: #cdcbc9; }
 
-#wpadminbar .quicklinks li .blavatar, #wpadminbar .menupop .menupop > .ab-item:before {
+/* line 319, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .quicklinks li .blavatar,
+#wpadminbar .menupop .menupop > .ab-item:before {
   color: #f3f2f1; }
 
-#wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li .ab-item:focus:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover .ab-item:after, #wpadminbar li.hover .ab-item:after, #wpadminbar li:hover #adminbarsearch:before {
+/* line 339, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar li a:focus .ab-icon:before,
+#wpadminbar li .ab-item:focus:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover .ab-item:after,
+#wpadminbar li.hover .ab-item:after,
+#wpadminbar li:hover #adminbarsearch:before {
   color: #c7a589; }
 
-#wpadminbar .quicklinks li a:hover .blavatar, #wpadminbar .menupop .menupop > .ab-item:hover:before {
+/* line 344, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+#wpadminbar .quicklinks li a:hover .blavatar,
+#wpadminbar .menupop .menupop > .ab-item:hover:before {
   color: #c7a589; }
 
 /* Admin Bar: search */
+/* line 351, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #adminbarsearch:before {
   color: #f3f2f1; }
 
+/* line 355, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary > #wp-admin-bar-search #adminbarsearch input.adminbar-input:focus {
   color: #fff;
   background: #6c645c; }
 
+/* line 360, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder {
   color: #fff;
-  opacity: 0.7; }
+  opacity: .7; }
 
+/* line 361, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder {
   color: #fff;
-  opacity: 0.7; }
+  opacity: .7; }
 
+/* line 362, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #adminbarsearch .adminbar-input::-moz-placeholder {
   color: #fff;
-  opacity: 0.7; }
+  opacity: .7; }
 
+/* line 363, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #adminbarsearch .adminbar-input:-ms-input-placeholder {
   color: #fff;
-  opacity: 0.7; }
+  opacity: .7; }
 
 /* Admin Bar: my account */
+/* line 368, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
   border-color: #6c645c;
   background-color: #6c645c; }
 
+/* line 373, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #wp-admin-bar-user-info .display-name {
   color: #fff; }
 
+/* line 377, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #wp-admin-bar-user-info a:hover .display-name {
   color: #c7a589; }
 
+/* line 381, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #wpadminbar #wp-admin-bar-user-info .username {
   color: #cdcbc9; }
 
 /* Pointers */
+/* line 388, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-pointer .wp-pointer-content h3 {
   background-color: #c7a589;
   border-color: #bf9878; }
 
+/* line 393, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-pointer .wp-pointer-content h3:before {
   color: #c7a589; }
 
-.wp-pointer.wp-pointer-top .wp-pointer-arrow, .wp-pointer.wp-pointer-top .wp-pointer-arrow-inner, .wp-pointer.wp-pointer-undefined .wp-pointer-arrow, .wp-pointer.wp-pointer-undefined .wp-pointer-arrow-inner {
+/* line 400, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.wp-pointer.wp-pointer-top .wp-pointer-arrow,
+.wp-pointer.wp-pointer-top .wp-pointer-arrow-inner,
+.wp-pointer.wp-pointer-undefined .wp-pointer-arrow,
+.wp-pointer.wp-pointer-undefined .wp-pointer-arrow-inner {
   border-bottom-color: #c7a589; }
 
 /* Media */
-.media-item .bar, .media-progress-bar div {
+/* line 408, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.media-item .bar,
+.media-progress-bar div {
   background-color: #c7a589; }
 
+/* line 412, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .details.attachment {
-  -webkit-box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #c7a589;
   box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #c7a589; }
 
+/* line 418, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .attachment.details .check {
   background-color: #c7a589;
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px #c7a589;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #c7a589; }
 
+/* line 423, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .media-selection .attachment.selection.details .thumbnail {
   -webkit-box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #c7a589;
   box-shadow: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #c7a589; }
 
 /* Themes */
-.theme-browser .theme.active .theme-name, .theme-browser .theme.add-new-theme:hover:after {
+/* line 436, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.theme-browser .theme.active .theme-name,
+.theme-browser .theme.add-new-theme:hover:after {
   background: #c7a589; }
 
+/* line 440, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .theme-browser .theme.add-new-theme:hover span:after {
   color: #c7a589; }
 
-.theme-section.current, .theme-filter.current {
+/* line 445, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.theme-section.current,
+.theme-filter.current {
   border-bottom-color: #59524c; }
 
+/* line 449, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 body.more-filters-opened .more-filters {
   color: #fff;
   background-color: #59524c; }
 
+/* line 454, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 body.more-filters-opened .more-filters:before {
   color: #fff; }
 
-body.more-filters-opened .more-filters:hover, body.more-filters-opened .more-filters:focus {
+/* line 459, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+body.more-filters-opened .more-filters:hover,
+body.more-filters-opened .more-filters:focus {
   background-color: #c7a589;
   color: #fff; }
 
-body.more-filters-opened .more-filters:hover:before, body.more-filters-opened .more-filters:focus:before {
+/* line 465, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+body.more-filters-opened .more-filters:hover:before,
+body.more-filters-opened .more-filters:focus:before {
   color: #fff; }
 
 /* Widgets */
+/* line 471, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .widgets-chooser li.widgets-chooser-selected {
   background-color: #c7a589;
   color: #fff; }
 
-.widgets-chooser li.widgets-chooser-selected:before, .widgets-chooser li.widgets-chooser-selected:focus:before {
+/* line 477, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.widgets-chooser li.widgets-chooser-selected:before,
+.widgets-chooser li.widgets-chooser-selected:focus:before {
   color: #fff; }
 
 /* Customize */
+/* line 483, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #customize-theme-controls .widget-area-select .selected {
   background-color: #c7a589;
   color: #fff; }
 
 /* jQuery UI Slider */
-.wp-slider .ui-slider-handle, .wp-slider .ui-slider-handle.ui-state-hover, .wp-slider .ui-slider-handle.focus {
+/* line 492, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
+.wp-slider .ui-slider-handle,
+.wp-slider .ui-slider-handle.ui-state-hover,
+.wp-slider .ui-slider-handle.focus {
   background: #c7a589;
   border-color: #b78b66;
-  -webkit-box-shadow: inset 0 1px 0 #e0cdbd, 0 1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 1px 0 #e0cdbd, 0 1px 0 rgba(0, 0, 0, 0.15); }
 
 /* Thickbox: Plugin information */
+/* line 500, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #sidemenu a.current {
   background: #f1f1f1;
   border-bottom-color: #f1f1f1; }
 
+/* line 505, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 #plugin-information .action-button {
   background: #c7a589; }
 
 /* Responsive Component */
+/* line 511, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 div#wp-responsive-toggle a:before {
   color: #f3f2f1; }
 
+/* line 515, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-responsive-open div#wp-responsive-toggle a {
   border-color: transparent;
   background: #c7a589; }
 
+/* line 521, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .star-rating .star {
   color: #c7a589; }
 
+/* line 525, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-admin/css/colors/_admin.scss */
 .wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle a {
   background: #46403c; }
+
+/*# sourceMappingURL=colors.css.map */

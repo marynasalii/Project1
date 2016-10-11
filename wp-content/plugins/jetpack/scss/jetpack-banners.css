@@ -1,0 +1,28 @@
+/* line 2, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.updated.jp-banner {
+  position: relative;
+  padding: 0; }
+
+/* line 7, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.updated .jp-banner__header {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0; }
+
+/* line 13, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.updated .jp-banner__button-container {
+  padding: 12px 0 0; }
+
+/* line 18, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.jp-banner .notice-dismiss {
+  text-decoration: none; }
+
+/* line 22, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.jp-banner__description {
+  font-size: 14px; }
+
+/* line 26, C:/Marina/conestoga/web d&d/PROG-8020/project1/wp-content/plugins/jetpack/scss/organisms/_banners.scss */
+.jp-banner__description-container {
+  padding: 16px; }
+
+/*# sourceMappingURL=jetpack-banners.css.map */
