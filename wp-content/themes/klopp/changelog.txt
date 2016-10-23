@@ -1,0 +1,43 @@
+ChangeLog
+=========
+
+
+Version 0.9*
+
+	i) Initial Release.
+	
+Version 0.91*
+
+	i) Fixed Pre Release Bugs.
+	ii) Sanitized & Escaped All Values Properly.
+	iii) Fixed PHP Notices.
+	
+Version 0.92*
+
+	i) Added License for Social Icons.
+	ii) Few Other Fixes.	
+	
+Version 0.93
+
+	i) Corrected Color Changes for Site Title/desc
+	ii) Added Help/Support Links in Customizer
+	iii) Translation Related Fixes.
+	iv) Sanitization Related Fixes.
+	v) Removed Depreciated theme tags.
+	vi) Fixed Slider to 3 Slides only. Eliminated Resemblance to a Pseudo CPT.
+	vii) Removed Old Functions.	
+	viii) Replaced Screenshot
+	
+Version 0.94
+
+	i) Bugs with Custom Logo Corrected.
+	ii) FIxed minor 404 error.
+	
+Version 0.95
+
+	i) Created a Function to check if Logo exists.	
+	
+Version 0.96
+
+	i) Added Correct hook for Customizer styles.
+	ii) Corrected link to wordpress support forum.		
